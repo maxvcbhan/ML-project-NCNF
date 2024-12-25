@@ -89,7 +89,8 @@ def get_model(num_users, num_items, mf_dim=10, layers=[10], reg_layers=[0], reg_
 
     # MF part
     mf_user_latent = keras.layers.Flatten()(MF_Embedding_User(user_input))
-    mf_item_latent = keras.layers.Flatten()(MF_Embedding_Item(item_input))
+    MF_item_embedded = MF_Embedding_Item(item_input)
+    mf_item_latent = keras.layers.Flatten()(MF_item_embedded)
     mf_vector = keras.layers.Multiply()([mf_user_latent, mf_item_latent])  # element-wise multiply
 
     # MLP part 
@@ -205,6 +206,11 @@ if __name__ == '__main__':
         model.compile(optimizer=keras.optimizers.SGD(learning_rate=learning_rate),
                       loss=keras.losses.binary_crossentropy)
     print(model.summary())
+    # keras.utils.plot_model(
+    #     model, to_file='model.png', show_shapes=True, show_dtype=True,show_layer_activations=True,
+    #     show_layer_names=True, rankdir='TB', expand_nested=True,
+    #     layer_range=None
+    # )
 
     # Load pretrain model
     if mf_pretrain != '' and mlp_pretrain != '':
