@@ -28,7 +28,7 @@ def parse_args():
                         help='Input data path.')
     parser.add_argument('--dataset', nargs='?', default='ml-1m',
                         help='Choose a dataset.')
-    parser.add_argument('--epochs', type=int, default=100,
+    parser.add_argument('--epochs', type=int, default=10,
                         help='Number of epochs.')
     parser.add_argument('--batch_size', type=int, default=256,
                         help='Batch size.')
@@ -61,9 +61,15 @@ def get_model(num_users, num_items, layers=[20, 10], reg_layers=[0, 0]):
     item_input = Input(shape=(1,), dtype='int32', name='item_input')
 
     MLP_Embedding_User = keras.layers.Embedding(input_dim=int(num_users), output_dim=int(layers[0] / 2),
+                                                embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                        stddev=0.01,
+                                                                                                        name="user_embedding_initializer"),
                                                 name='user_embedding',
                                                 embeddings_regularizer=regularizers.l2(reg_layers[0]))
     MLP_Embedding_Item = keras.layers.Embedding(input_dim=int(num_items), output_dim=int(layers[0] / 2),
+                                                embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                        stddev=0.01,
+                                                                                                        name="user_embedding_initializer"),
                                                 name='item_embedding',
                                                 embeddings_regularizer=regularizers.l2(reg_layers[0]))
 
@@ -72,7 +78,7 @@ def get_model(num_users, num_items, layers=[20, 10], reg_layers=[0, 0]):
     item_latent = keras.layers.Flatten()(MLP_Embedding_Item(item_input))
 
     # The 0-th layer is the concatenation of embedding layers
-    vector = keras.layers.Multiply()([user_latent, item_latent])
+    vector = keras.layers.Concatenate()([user_latent, item_latent])
 
     # MLP layers
     for idx in range(1, num_layer):
@@ -81,7 +87,8 @@ def get_model(num_users, num_items, layers=[20, 10], reg_layers=[0, 0]):
         vector = layer(vector)
 
     # Final prediction layer
-    prediction = keras.layers.Dense(1, activation='sigmoid', kernel_initializer='lecun_uniform', name='prediction')(vector)
+    prediction = keras.layers.Dense(1, activation=keras.activations.sigmoid, kernel_initializer='lecun_uniform', name='prediction')(
+        vector)
 
     model = keras.Model(inputs=[user_input, item_input],
                         outputs=prediction)

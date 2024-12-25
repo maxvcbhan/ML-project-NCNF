@@ -64,13 +64,25 @@ def get_model(num_users, num_items, mf_dim=10, layers=[10], reg_layers=[0], reg_
     
     # Embedding layer
     MF_Embedding_User = keras.layers.Embedding(input_dim = num_users, output_dim = mf_dim, name = 'mf_embedding_user',
+                                               embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                       stddev=0.01,
+                                                                                                       name="user_mf_embedding_initializer"),
                                   embeddings_regularizer = regularizers.l2(reg_mf))
     MF_Embedding_Item = keras.layers.Embedding(input_dim = num_items, output_dim = mf_dim, name = 'mf_embedding_item',
+                                               embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                       stddev=0.01,
+                                                                                                       name="item_mf_embedding_initializer"),
                                   embeddings_regularizer = regularizers.l2(reg_mf))
 
     MLP_Embedding_User = keras.layers.Embedding(input_dim = num_users, output_dim = int(layers[0]/2), name = "mlp_embedding_user",
+                                                embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                        stddev=0.01,
+                                                                                                        name="user_mlp_embedding_initializer"),
                                   embeddings_regularizer = regularizers.l2(reg_layers[0]))
     MLP_Embedding_Item = keras.layers.Embedding(input_dim = num_items, output_dim = int(layers[0]/2), name = 'mlp_embedding_item',
+                                                embeddings_initializer=keras.initializers.random_normal(mean=0.0,
+                                                                                                        stddev=0.01,
+                                                                                                        name="item_mlp_embedding_initializer"),
                                   embeddings_regularizer = regularizers.l2(reg_layers[0]))
     
     # MF part
