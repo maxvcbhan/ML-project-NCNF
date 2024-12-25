@@ -10,12 +10,13 @@ import numpy as np
 from keras import Input
 import keras
 from keras import regularizers
+# from evaluate import evaluate_model
 from evaluate import evaluate_model
 from Dataset import Dataset
 from time import time
 import GMF, MLP
 import argparse
-
+import multiprocessing as mp
 #################### Arguments ####################
 def parse_args():
     parser = argparse.ArgumentParser(description="Run NeuMF.")
@@ -158,7 +159,7 @@ if __name__ == '__main__':
     mlp_pretrain = args.mlp_pretrain
             
     topK = 10
-    evaluation_threads = 1#mp.cpu_count()
+    evaluation_threads = 1 #mp.cpu_count()
     print("NeuMF arguments: %s " %(args))
     model_out_file = 'Pretrain/%s_NeuMF_%d_%s_%d.weights.h5' %(args.dataset, mf_dim, args.layers, time())
 

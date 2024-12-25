@@ -7,12 +7,18 @@ Evaluate the performance of Top-K recommendation:
 
 @author: hexiangnan
 '''
+from functools import partial
+from multiprocessing import Pool
+
 import math
 import heapq # for retrieval topK
 import multiprocessing
 import numpy as np
 from time import time
 #from numba import jit, autojit
+from multiprocessing import Process, Pipe
+
+from pyspark.shuffle import process
 
 # Global variables that are shared across processes
 _model = None
