@@ -59,13 +59,11 @@ def get_model(num_users, num_items, latent_dim, regs=[0, 0]):
     item_input = Input(shape=(1,), dtype='int32', name='item_input')
 
     MF_Embedding_User = layers.Embedding(input_dim=num_users, output_dim=latent_dim, name='user_embedding',
-                                         embeddings_initializer=keras.initializers.random_normal(mean=0.0, stddev=0.01,
-                                                                                                 name="user_embedding_initializer"),
+                                         embeddings_initializer=keras.initializers.random_normal(mean=0.0, stddev=0.01),
                                          embeddings_regularizer=regularizers.l2(regs[0]), input_length=1)
 
     MF_Embedding_Item = layers.Embedding(input_dim=num_items, output_dim=latent_dim, name='item_embedding',
-                                         embeddings_initializer=keras.initializers.random_normal(mean=0.0, stddev=0.01,
-                                                                                                 name="item_embedding_initializer"),
+                                         embeddings_initializer=keras.initializers.random_normal(mean=0.0, stddev=0.01),
                                          embeddings_regularizer=regularizers.l2(regs[1]), input_length=1)
 
     # Crucial to flatten an embedding vector!
