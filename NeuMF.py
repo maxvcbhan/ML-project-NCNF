@@ -95,7 +95,7 @@ def get_model(num_users, num_items, mf_dim=10, layers=[10], reg_layers=[0], reg_
     # MLP part 
     mlp_user_latent = keras.layers.Flatten()(MLP_Embedding_User(user_input))
     mlp_item_latent = keras.layers.Flatten()(MLP_Embedding_Item(item_input))
-    mlp_vector = keras.layers.Multiply()([mlp_user_latent, mlp_item_latent])
+    mlp_vector = keras.layers.Concatenate()([mlp_user_latent, mlp_item_latent])
     for idx in range(1, num_layer):
         layer = keras.layers.Dense(layers[idx], kernel_regularizer=regularizers.l2(reg_layers[idx]),
                                    activation=keras.activations.relu, name="layer%d" % idx)
@@ -104,7 +104,7 @@ def get_model(num_users, num_items, mf_dim=10, layers=[10], reg_layers=[0], reg_
     # Concatenate MF and MLP parts
     # mf_vector = Lambda(lambda x: x * alpha)(mf_vector)
     # mlp_vector = Lambda(lambda x : x * (1-alpha))(mlp_vector)
-    predict_vector = keras.layers.Multiply()([mf_vector, mlp_vector])
+    predict_vector = keras.layers.Concatenate()([mf_vector, mlp_vector])
 
     # Final prediction layer
     prediction = keras.layers.Dense(1, activation=keras.activations.relu, kernel_initializer='lecun_uniform',
