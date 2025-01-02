@@ -59,7 +59,9 @@ def evaluate_model(model, testRatings, testNegatives, K, num_thread):
     return (hits, ndcgs)
 
 def eval_one_rating(idx, _model, _testRatings, _testNegatives, _K):
+# def eval_one_rating(idx):
     # print(idx)
+
     # print(_testNegatives)
     rating = _testRatings[idx]
     items = _testNegatives[idx]

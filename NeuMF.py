@@ -6,6 +6,7 @@ He Xiangnan et al. Neural Collaborative Filtering. In WWW 2017.
 @author: Xiangnan He (xiangnanhe@gmail.com)
 '''
 import numpy as np
+import tensorflow as tf
 
 from keras import Input
 import keras
@@ -177,9 +178,14 @@ if __name__ == '__main__':
     verbose = args.verbose
     mf_pretrain = args.mf_pretrain
     mlp_pretrain = args.mlp_pretrain
+    ## set up tensorboard
+    # log_dir = "logs/activation_logs"
+    # tensorboard_callback = keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+    # tf.debugging.experimental.enable_dump_debug_info("./logs", tensor_debug_mode="FULL_HEALTH", circular_buffer_size=-1)
 
     topK = 10
-    evaluation_threads = 8  # mp.cpu_count()
+    evaluation_threads = mp.cpu_count()
     print("NeuMF arguments: %s " % (args))
     model_out_file = 'Pretrain/%s_NeuMF_%d_%s_%d.weights.h5' % (args.dataset, mf_dim, args.layers, time())
 
