@@ -1,8 +1,8 @@
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/4c6a6303ba030116be2a8c94191ba1e613c759a7/pic/Cover.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/304c5d37b710dc57bf9773dccb4345cbbc763778/pic/page1.png)
-![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/1a2489d5b60193dc78ecf92160e19bfd590b6389/pic/fig3.png)
-![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/1242981bc738d8e587db55acda2d668f45f50c3a/pic/test.png)
 
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/06c32a9eb5b029d1855aac3a9fba0ced24fed139/pic/page3.png)
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/1a2489d5b60193dc78ecf92160e19bfd590b6389/pic/fig3.png)
 
 
 
