@@ -1,4 +1,4 @@
-![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/03832e032df92f4e27964608a1ad37a1fb6cb642/pic/Cover.png)
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/4c6a6303ba030116be2a8c94191ba1e613c759a7/pic/Cover.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/304c5d37b710dc57bf9773dccb4345cbbc763778/pic/page1.png)
 
 
