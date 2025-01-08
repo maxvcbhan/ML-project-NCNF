@@ -1,4 +1,4 @@
-![alt text]()
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/03832e032df92f4e27964608a1ad37a1fb6cb642/pic/Cover.png)
 
 
 
