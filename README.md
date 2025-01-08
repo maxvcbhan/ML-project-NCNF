@@ -36,8 +36,8 @@
 
 
 
-
-
+***
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/a9a84f3d801c3175e1f95fc7987273c0cd434243/pic/References.png)
 ***
 # Neural Collaborative Filtering
 
