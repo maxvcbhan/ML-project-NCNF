@@ -5,7 +5,7 @@ This repository is **forked** from the original project: [Neural Collaborative F
 
 This section highlights the key improvements made in the project:
 
-- **Enhanced Functionality**: Introduced new configurations for `num_factors`, `num_neg`, and `topK` to extend the hyperparameter space for experiments.
+- **Enhanced Functionality**: Introduced new configurations for `num_factors`, `num_neg`, and `topK` to extend the hyperparameter space for experiments and update keras's code to support python3 and keras version 3
 - **Support for Additional Datasets**: Added integration with the GitHub Archive dataset, enabling analysis of open-source software activities.
 - **Layer Comparison**: Enabled experiments to compare model performance with and without additional activity layers, providing deeper insights into model architecture design.
 - **Improved Documentation**: Updated `README.md` and other resources to better explain the workflow, dataset usage, and experiment results.
