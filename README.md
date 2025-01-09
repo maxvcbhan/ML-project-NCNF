@@ -1,7 +1,18 @@
 # Neural Collaborative Filtering (Fork)
 
 This repository is **forked** from the original project: [Neural Collaborative Filtering by He Xiangnan et al.](https://github.com/hexiangnan/neural_collaborative_filtering). It implements neural collaborative filtering methods for recommendation systems, combining matrix factorization and multi-layer perceptrons.
-## The summary of improvement
+## 🌟 Summary of Improvement
+
+This section highlights the key improvements made in the project:
+
+- **Enhanced Functionality**: Introduced new configurations for `num_factors`, `num_neg`, and `topK` to extend the hyperparameter space for experiments.
+- **Support for Additional Datasets**: Added integration with the GitHub Archive dataset, enabling analysis of open-source software activities.
+- **Layer Comparison**: Enabled experiments to compare model performance with and without additional activity layers, providing deeper insights into model architecture design.
+- **Improved Documentation**: Updated `README.md` and other resources to better explain the workflow, dataset usage, and experiment results.
+- **Streamlined Grid Search**: Optimized grid search processes for faster and more efficient hyperparameter tuning across multiple datasets.
+
+By incorporating these improvements, the project provides a more comprehensive and flexible framework for running experiments in neural collaborative filtering.
+## 📊 Presentation
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/4c6a6303ba030116be2a8c94191ba1e613c759a7/pic/Cover.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/e246af551bb3db3b84216a6886cc59e750a4b5a7/pic/page1.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/26ef6a7d2d3f2779bc1c75054ead4a7d8dbe67b6/pic/page2.png)
