@@ -1,7 +1,7 @@
 # Neural Collaborative Filtering (Fork)
 
 This repository is **forked** from the original project: [Neural Collaborative Filtering by He Xiangnan et al.](https://github.com/hexiangnan/neural_collaborative_filtering). It implements neural collaborative filtering methods for recommendation systems, combining matrix factorization and multi-layer perceptrons.
-## the summary of improvement
+## The summary of improvement
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/4c6a6303ba030116be2a8c94191ba1e613c759a7/pic/Cover.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/e246af551bb3db3b84216a6886cc59e750a4b5a7/pic/page1.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/26ef6a7d2d3f2779bc1c75054ead4a7d8dbe67b6/pic/page2.png)
@@ -11,33 +11,67 @@ This repository is **forked** from the original project: [Neural Collaborative F
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/a9a84f3d801c3175e1f95fc7987273c0cd434243/pic/References.png)
 ***
 
-## how to run the file
-there is specific file to run experiment
+## 🚀 How to Run the Experiments
 
-Run gridserch option with "num_factors": [8], "num_neg": [10], "topK": [10] this will use ml-1m dataset
-```
-python NeuMF-gridsearch.py --dataset=ml-1m --batch_size=20480  --epochs=50
-```
+The following sections describe how to execute the experiments for different configurations and datasets.
 
-Run gridserch option with "num_factors": [8, 16, 32, 64], "num_neg": [1, 5, 10], "topK": [1, 5, 10] this will use pinterest dataset
-```
-python NeuMF-gridsearch-pinterest.py --dataset=ml-1m --batch_size=20480  --epochs=50
-```
+### 🔍 **Grid Search with MovieLens Dataset**
 
-Run gridserch option with "num_factors": [8, 16, 32, 64], "num_neg": [1, 5, 10], "topK": [1, 5, 10] this will use github archive dataset run with no activity layer added
-```
-python NeuMF-gridsearch-gh.py --dataset=ml-1m --batch_size=20480  --epochs=50
-```
+Run a grid search with the following configuration:
+- **Hyperparameters**:
+  - `num_factors`: [8]
+  - `num_neg`: [10]
+  - `topK`: [10]
+- **Dataset**: MovieLens (ml-1m)
 
-Run gridserch option with "num_factors": [8, 16, 32, 64], "num_neg": [1, 5, 10], "topK": [1, 5, 10] this will use github archive dataset run with no activity layer added
-```
-python NeuMF-gridsearch-gh-add-layers.py --dataset=ml-1m --batch_size=20480  --epochs=50
+```bash
+python NeuMF-gridsearch.py --dataset=ml-1m --batch_size=20480 --epochs=50
 ```
 
+### 📌 **Grid Search with Pinterest Dataset**
+
+Run a grid search with the following configuration:
+- **Hyperparameters**:
+  - `num_factors`: [8, 16, 32, 64]
+  - `num_neg`: [1, 5, 10]
+  - `topK`: [1, 5, 10]
+- **Dataset**: Pinterest (pinterest)
+
+```bash
+python NeuMF-gridsearch-pinterest.py --dataset=ml-1m --batch_size=20480 --epochs=50
+```
+ 🌐 Grid Search with GitHub Archive Dataset (No Activity Layer)
+
+Run a grid search with the following configuration:
+
+**Hyperparameters**:
+- `num_factors`: [8, 16, 32, 64]
+- `num_neg`: [1, 5, 10]
+- `topK`: [1, 5, 10]
+
+**Dataset**: GitHub Archive (No Activity Layer)
+
+```bash
+python NeuMF-gridsearch-gh.py --dataset=gh-archive --batch_size=20480 --epochs=50
+```
+
+ 🌐 Grid Search with GitHub Archive Dataset (With Activity Layer)
+
+Run a grid search with the following configuration:
+
+**Hyperparameters**:
+- `num_factors`: [8, 16, 32, 64]
+- `num_neg`: [1, 5, 10]
+- `topK`: [1, 5, 10]
+
+**Dataset**: GitHub Archive (With Activity Layer)
+
+```bash
+python NeuMF-gridsearch-gh-add-layers.py --dataset=gh-archive --batch_size=20480 --epochs=50
+```
 
 
-
-## details from authors
+## Details from authors
 This is our implementation for the paper:
 
 Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). [Neural Collaborative Filtering.](http://dl.acm.org/citation.cfm?id=3052569) In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
