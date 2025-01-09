@@ -40,7 +40,7 @@ Run a grid search with the following configuration:
 ```bash
 python NeuMF-gridsearch-pinterest.py --dataset=ml-1m --batch_size=20480 --epochs=50
 ```
- 🌐 Grid Search with GitHub Archive Dataset (No Activity Layer)
+ ### 🌐 Grid Search with GitHub Archive Dataset (No Activity Layer)
 
 Run a grid search with the following configuration:
 
@@ -55,7 +55,7 @@ Run a grid search with the following configuration:
 python NeuMF-gridsearch-gh.py --dataset=gh-archive --batch_size=20480 --epochs=50
 ```
 
- 🌐 Grid Search with GitHub Archive Dataset (With Activity Layer)
+ ### 🌐 Grid Search with GitHub Archive Dataset (With Activity Layer)
 
 Run a grid search with the following configuration:
 
