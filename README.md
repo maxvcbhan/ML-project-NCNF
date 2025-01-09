@@ -1,7 +1,7 @@
 # Neural Collaborative Filtering (Fork)
 
 This repository is **forked** from the original project: [Neural Collaborative Filtering by He Xiangnan et al.](https://github.com/hexiangnan/neural_collaborative_filtering). It implements neural collaborative filtering methods for recommendation systems, combining matrix factorization and multi-layer perceptrons.
-
+## the summary of improvement
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/4c6a6303ba030116be2a8c94191ba1e613c759a7/pic/Cover.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/e246af551bb3db3b84216a6886cc59e750a4b5a7/pic/page1.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/26ef6a7d2d3f2779bc1c75054ead4a7d8dbe67b6/pic/page2.png)
