@@ -8,7 +8,7 @@
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/a9a84f3d801c3175e1f95fc7987273c0cd434243/pic/References.png)
 ***
 
-## how to run the file 
+## how to run the file
 there is specific file to run experiment
 
 Run gridserch option with "num_factors": [8], "num_neg": [10], "topK": [10] this will use ml-1m dataset
@@ -33,6 +33,8 @@ python NeuMF-gridsearch-gh-add-layers.py --dataset=ml-1m --batch_size=20480  --e
 
 
 
+
+## details from authors
 This is our implementation for the paper:
 
 Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). [Neural Collaborative Filtering.](http://dl.acm.org/citation.cfm?id=3052569) In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
