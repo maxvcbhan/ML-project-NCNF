@@ -26,9 +26,9 @@ import wandb
 # run = wandb.init()
 
 param_grid = {
-    "num_factors": [8, 16, 32, 64],
-    "num_neg": [1, 5, 10],
-    "topK": [1, 5, 10],
+    "num_factors": [64],
+    "num_neg": [10],
+    "topK": [10],
 }
 
 

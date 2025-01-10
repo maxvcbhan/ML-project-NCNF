@@ -9,7 +9,6 @@ Evaluate the performance of Top-K recommendation:
 '''
 from functools import partial
 from multiprocessing import Pool
-
 import math
 import heapq # for retrieval topK
 import multiprocessing
@@ -72,7 +71,7 @@ def eval_one_rating(idx, _model, _testRatings, _testNegatives, _K):
     map_item_score = {}
     users = np.full(len(items), u, dtype = 'int32')
     predictions = _model.predict([users, np.array(items)],
-                                 batch_size=100, verbose=0)
+                                 batch_size=1024, verbose=0)
     for i in range(len(items)):
         item = items[i]
         map_item_score[item] = predictions[i]
@@ -85,11 +84,13 @@ def eval_one_rating(idx, _model, _testRatings, _testNegatives, _K):
     return (hr, ndcg)
 
 
+
 def getHitRatio(ranklist, gtItem):
     for item in ranklist:
         if item == gtItem:
             return 1
     return 0
+
 
 def getNDCG(ranklist, gtItem):
     for i in range(len(ranklist)):
