@@ -1,0 +1,101 @@
+Iteration,HR,NDCG,loss,type
+0,0.2638,0.1442,0.6546,no activity layer
+1,0.3047,0.1603,0.4849,no activity layer
+2,0.3182,0.1681,0.4569,no activity layer
+3,0.3155,0.171,0.4489,no activity layer
+4,0.3344,0.1797,0.448,no activity layer
+5,0.3386,0.1809,0.4435,no activity layer
+6,0.3371,0.1813,0.4357,no activity layer
+7,0.3401,0.1822,0.4301,no activity layer
+8,0.3448,0.184,0.4205,no activity layer
+9,0.3529,0.1887,0.4119,no activity layer
+10,0.3567,0.1928,0.3973,no activity layer
+11,0.3695,0.2026,0.3829,no activity layer
+12,0.3749,0.2058,0.3664,no activity layer
+13,0.3907,0.2126,0.3609,no activity layer
+14,0.4065,0.2205,0.3379,no activity layer
+15,0.4238,0.2317,0.326,no activity layer
+16,0.4242,0.231,0.3166,no activity layer
+17,0.3132,0.1629,0.3338,no activity layer
+18,0.4535,0.2493,0.31,no activity layer
+19,0.462,0.2552,0.2875,no activity layer
+20,0.4647,0.2562,0.284,no activity layer
+21,0.4759,0.2659,0.2767,no activity layer
+22,0.4747,0.2619,0.2702,no activity layer
+23,0.4817,0.2692,0.267,no activity layer
+24,0.4836,0.2761,0.262,no activity layer
+25,0.4867,0.2775,0.2582,no activity layer
+26,0.4909,0.279,0.2566,no activity layer
+27,0.4921,0.2751,0.255,no activity layer
+28,0.489,0.2827,0.3115,no activity layer
+29,0.275,0.1411,2.2939,no activity layer
+30,0.2642,0.135,4.8808,no activity layer
+31,0.2977,0.1581,4.4439,no activity layer
+32,0.2314,0.1366,3.0284,no activity layer
+33,0.2426,0.1464,1.619,no activity layer
+34,0.4767,0.2652,1.2758,no activity layer
+35,0.4855,0.2727,0.4859,no activity layer
+36,0.2013,0.1232,0.7565,no activity layer
+37,0.4034,0.2266,1.687,no activity layer
+38,0.0694,0.034,5.735,no activity layer
+39,0.0694,0.0339,8.9626,no activity layer
+40,0.0694,0.0342,8.8172,no activity layer
+41,0.0721,0.0347,8.5545,no activity layer
+42,0.0729,0.0352,8.3344,no activity layer
+43,0.081,0.0397,7.5071,no activity layer
+44,0.0463,0.0249,3.6702,no activity layer
+45,0.0478,0.0247,3.2619,no activity layer
+46,0.0694,0.0407,3.1336,no activity layer
+47,0.1377,0.086,2.9001,no activity layer
+48,0.2923,0.1751,2.4491,no activity layer
+49,0.2094,0.1196,2.4779,no activity layer
+0,0.2788,0.147,0.5826,activity layer
+1,0.3263,0.1734,0.4634,activity layer
+2,0.332,0.1798,0.4416,activity layer
+3,0.329,0.1773,0.4278,activity layer
+4,0.3297,0.1781,0.428,activity layer
+5,0.3344,0.1797,0.4263,activity layer
+6,0.3355,0.1839,0.4171,activity layer
+7,0.3371,0.1854,0.4072,activity layer
+8,0.3432,0.1872,0.3965,activity layer
+9,0.3502,0.1906,0.3824,activity layer
+10,0.3633,0.1984,0.3678,activity layer
+11,0.3668,0.2007,0.3728,activity layer
+12,0.3868,0.2118,0.3706,activity layer
+13,0.371,0.2041,0.4061,activity layer
+14,0.2827,0.1614,4.671,activity layer
+15,0.241,0.1473,3.0747,activity layer
+16,0.2337,0.1433,2.8778,activity layer
+17,0.2272,0.1383,2.8112,activity layer
+18,0.302,0.1678,3.4418,activity layer
+19,0.2896,0.1631,4.0363,activity layer
+20,0.2588,0.1513,3.2147,activity layer
+21,0.2588,0.1514,2.9217,activity layer
+22,0.209,0.1307,2.9449,activity layer
+23,0.2167,0.1343,2.8533,activity layer
+24,0.2187,0.1339,2.8153,activity layer
+25,0.2202,0.1353,2.8033,activity layer
+26,0.2611,0.1544,2.8296,activity layer
+27,0.2406,0.1461,2.8317,activity layer
+28,0.2815,0.1622,2.8955,activity layer
+29,0.2511,0.1494,2.9393,activity layer
+30,0.2314,0.1414,2.7304,activity layer
+31,0.2522,0.1507,2.6813,activity layer
+32,0.3189,0.1782,2.6829,activity layer
+33,0.2094,0.1323,2.5292,activity layer
+34,0.2063,0.1311,2.7762,activity layer
+35,0.1948,0.1248,2.7556,activity layer
+36,0.1836,0.1177,2.8524,activity layer
+37,0.2194,0.1361,2.7364,activity layer
+38,0.2433,0.1461,2.6578,activity layer
+39,0.3621,0.1996,1.5545,activity layer
+40,0.1311,0.0915,0.9642,activity layer
+41,0.1257,0.0884,2.9565,activity layer
+42,0.1169,0.0828,2.9763,activity layer
+43,0.1057,0.0752,2.9778,activity layer
+44,0.1126,0.0796,2.9886,activity layer
+45,0.1145,0.0804,2.975,activity layer
+46,0.1288,0.0878,2.9714,activity layer
+47,0.1327,0.089,2.9626,activity layer
+48,0.1373,0.0901,2.9646,activity layer
+49,0.086,0.0582,3.005,activity layer
