@@ -1,0 +1,2 @@
+Init: HR = 0.1028, NDCG = 0.0460
+Iteration 0 [10.8 s]: HR = 0.4389, NDCG = 0.2372, loss = 0.4515 [31.8 s]

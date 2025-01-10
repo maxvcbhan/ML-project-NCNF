@@ -1,0 +1,12 @@
+Init: HR = 0.0524, NDCG = 0.0321
+Iteration 0 [2.7 s]: HR = 0.0926, NDCG = 0.0601, loss = 0.4673 [36.0 s]
+Iteration 1 [0.7 s]: HR = 0.1130, NDCG = 0.0729, loss = 0.3180 [39.0 s]
+Iteration 2 [0.9 s]: HR = 0.1304, NDCG = 0.0833, loss = 0.3013 [40.9 s]
+Iteration 3 [0.7 s]: HR = 0.1419, NDCG = 0.0912, loss = 0.2933 [40.8 s]
+Iteration 4 [0.7 s]: HR = 0.1531, NDCG = 0.0969, loss = 0.2867 [41.5 s]
+Iteration 5 [0.5 s]: HR = 0.1654, NDCG = 0.1029, loss = 0.2808 [40.5 s]
+Iteration 6 [0.6 s]: HR = 0.1762, NDCG = 0.1095, loss = 0.2758 [40.5 s]
+Iteration 7 [0.6 s]: HR = 0.1847, NDCG = 0.1139, loss = 0.2719 [38.9 s]
+Iteration 8 [0.7 s]: HR = 0.1851, NDCG = 0.1156, loss = 0.2695 [40.2 s]
+Iteration 9 [0.6 s]: HR = 0.1921, NDCG = 0.1205, loss = 0.2682 [38.7 s]
+End. Best Iteration 9:  HR = 0.1921, NDCG = 0.1205. 
