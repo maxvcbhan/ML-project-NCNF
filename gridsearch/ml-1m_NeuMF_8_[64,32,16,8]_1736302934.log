@@ -1,0 +1,2 @@
+Running grid search 1/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adam')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adam'), Loss: 0.0000, HR: 0.5212, NDCG: 0.2822
+Running grid search 2/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'sgd')

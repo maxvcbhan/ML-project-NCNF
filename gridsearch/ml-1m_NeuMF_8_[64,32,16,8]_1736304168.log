@@ -1,0 +1,7 @@
+Running grid search 1/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adam')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adam'), Loss: 3.3836, HR: 0.5296, NDCG: 0.2986
+Running grid search 2/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'sgd')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'sgd'), Loss: 0.5007, HR: 0.0904, NDCG: 0.0409
+Running grid search 3/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'rmsprop')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'rmsprop'), Loss: 1.1654, HR: 0.4525, NDCG: 0.2528
+Running grid search 4/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adagrad')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0, 'adagrad'), Loss: 0.4987, HR: 0.1505, NDCG: 0.0700
+Running grid search 5/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0.01, 'adam')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0.01, 'adam'), Loss: 2.6759, HR: 0.4475, NDCG: 0.2487
+Running grid search 6/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0.01, 'sgd')Parameters: ([64, 32, 16, 8], [0, 0, 0, 0], 0.01, 'sgd'), Loss: 0.5716, HR: 0.0997, NDCG: 0.0430
+Running grid search 7/300: ([64, 32, 16, 8], [0, 0, 0, 0], 0.01, 'rmsprop')

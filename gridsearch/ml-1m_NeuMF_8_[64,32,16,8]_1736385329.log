@@ -1,0 +1,2 @@
+Running grid search 1/1: (8, 4, 10)Parameters: (8, 4, 10), Loss: 2.6299, HR: 0.5685, NDCG: 0.3178
+Best Result: Params: (8, 4, 10), Loss: 0.3441, HR: 0.5685, NDCG: 0.3178
