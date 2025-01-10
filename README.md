@@ -19,7 +19,7 @@ By incorporating these improvements, the project provides a more comprehensive a
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/master/pic/Page3.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/1a2489d5b60193dc78ecf92160e19bfd590b6389/pic/fig3.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/master/pic/ResultRunTable.png)
-![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/master/pic/page4_revise.png)
+![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/master/pic/page03_re.png)
 ![alt text](https://github.com/maxvcbhan/ML-project-NCNF/blob/a9a84f3d801c3175e1f95fc7987273c0cd434243/pic/References.png)
 ***
 
